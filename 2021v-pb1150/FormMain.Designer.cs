@@ -75,6 +75,7 @@ namespace _2021v_pb1150
             this.comPortSelect.Location = new System.Drawing.Point(114, 0);
             this.comPortSelect.Name = "comPortSelect";
             this.comPortSelect.Size = new System.Drawing.Size(158, 33);
+            this.comPortSelect.Sorted = true;
             this.comPortSelect.TabIndex = 2;
             // 
             // bitRateSelect
