@@ -41,12 +41,12 @@ namespace _2021v_pb1150
             this.receivedDataTextBox = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabControlMain = new System.Windows.Forms.TabControl();
+            this.tabPageConnection = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.statusStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabControlMain.SuspendLayout();
+            this.tabPageConnection.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -158,43 +158,43 @@ namespace _2021v_pb1150
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(240, 32);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // tabControl1
+            // tabControlMain
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 408);
-            this.tabControl1.TabIndex = 11;
+            this.tabControlMain.Controls.Add(this.tabPageConnection);
+            this.tabControlMain.Controls.Add(this.tabPage2);
+            this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlMain.Location = new System.Drawing.Point(0, 0);
+            this.tabControlMain.Name = "tabControlMain";
+            this.tabControlMain.SelectedIndex = 0;
+            this.tabControlMain.Size = new System.Drawing.Size(800, 408);
+            this.tabControlMain.TabIndex = 11;
             // 
-            // tabPage1
+            // tabPageConnection
             // 
-            this.tabPage1.Controls.Add(this.disconnectButton);
-            this.tabPage1.Controls.Add(this.connectButton);
-            this.tabPage1.Controls.Add(this.sendDataTextBox);
-            this.tabPage1.Controls.Add(this.receivedDataTextBox);
-            this.tabPage1.Controls.Add(this.bitRateSelect);
-            this.tabPage1.Controls.Add(this.sendButton);
-            this.tabPage1.Controls.Add(this.receiveButton);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.comPortSelect);
-            this.tabPage1.Location = new System.Drawing.Point(4, 34);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(792, 370);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPageConnection.Controls.Add(this.disconnectButton);
+            this.tabPageConnection.Controls.Add(this.connectButton);
+            this.tabPageConnection.Controls.Add(this.sendDataTextBox);
+            this.tabPageConnection.Controls.Add(this.receivedDataTextBox);
+            this.tabPageConnection.Controls.Add(this.bitRateSelect);
+            this.tabPageConnection.Controls.Add(this.sendButton);
+            this.tabPageConnection.Controls.Add(this.receiveButton);
+            this.tabPageConnection.Controls.Add(this.label2);
+            this.tabPageConnection.Controls.Add(this.label1);
+            this.tabPageConnection.Controls.Add(this.comPortSelect);
+            this.tabPageConnection.Location = new System.Drawing.Point(4, 34);
+            this.tabPageConnection.Name = "tabPageConnection";
+            this.tabPageConnection.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageConnection.Size = new System.Drawing.Size(792, 370);
+            this.tabPageConnection.TabIndex = 0;
+            this.tabPageConnection.Text = "Connection";
+            this.tabPageConnection.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 62);
+            this.tabPage2.Size = new System.Drawing.Size(792, 370);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -204,16 +204,16 @@ namespace _2021v_pb1150
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.statusStrip1);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SoftSensConf";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabControlMain.ResumeLayout(false);
+            this.tabPageConnection.ResumeLayout(false);
+            this.tabPageConnection.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,8 +233,8 @@ namespace _2021v_pb1150
         private System.Windows.Forms.TextBox receivedDataTextBox;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabControl tabControlMain;
+        private System.Windows.Forms.TabPage tabPageConnection;
         private System.Windows.Forms.TabPage tabPage2;
     }
 }
