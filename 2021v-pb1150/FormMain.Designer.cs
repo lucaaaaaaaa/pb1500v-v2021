@@ -126,6 +126,7 @@ namespace _2021v_pb1150
             this.sendButton.TabIndex = 7;
             this.sendButton.Text = "Send";
             this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
             // 
             // receiveButton
             // 
@@ -135,6 +136,7 @@ namespace _2021v_pb1150
             this.receiveButton.TabIndex = 8;
             this.receiveButton.Text = "Receive";
             this.receiveButton.UseVisualStyleBackColor = true;
+            this.receiveButton.Click += new System.EventHandler(this.receiveButton_Click);
             // 
             // receivedDataTextBox
             // 

@@ -38,5 +38,15 @@ namespace _2021v_pb1150
         {
             //serialPort.Close();
         }
+
+        private void receiveButton_Click(object sender, EventArgs e)
+        {
+            //var data = serialPort.ReadExisting();
+        }
+
+        private void sendButton_Click(object sender, EventArgs e)
+        {
+            //serialPort.WriteLine(sendDataTextBox.Text);
+        }
     }
 }
