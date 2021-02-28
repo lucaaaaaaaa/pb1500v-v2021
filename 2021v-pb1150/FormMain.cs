@@ -28,5 +28,15 @@ namespace _2021v_pb1150
                 comPortSelect.SelectedIndex = comPortSelect.Items.Count-1;
             }
         }
+
+        private void connectButton_Click(object sender, EventArgs e)
+        {
+            //serialPort.Open();
+        }
+
+        private void disconnectButton_Click(object sender, EventArgs e)
+        {
+            //serialPort.Close();
+        }
     }
 }

@@ -29,6 +29,7 @@ namespace _2021v_pb1150
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comPortSelect = new System.Windows.Forms.ComboBox();
@@ -44,6 +45,7 @@ namespace _2021v_pb1150
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageConnection = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.serialPort = new System.IO.Ports.SerialPort(this.components);
             this.statusStrip1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageConnection.SuspendLayout();
@@ -97,6 +99,7 @@ namespace _2021v_pb1150
             this.connectButton.TabIndex = 4;
             this.connectButton.Text = "Connect";
             this.connectButton.UseVisualStyleBackColor = true;
+            this.connectButton.Click += new System.EventHandler(this.connectButton_Click);
             // 
             // disconnectButton
             // 
@@ -106,6 +109,7 @@ namespace _2021v_pb1150
             this.disconnectButton.TabIndex = 5;
             this.disconnectButton.Text = "Disconnect";
             this.disconnectButton.UseVisualStyleBackColor = true;
+            this.disconnectButton.Click += new System.EventHandler(this.disconnectButton_Click);
             // 
             // sendDataTextBox
             // 
@@ -236,6 +240,7 @@ namespace _2021v_pb1150
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabPageConnection;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.IO.Ports.SerialPort serialPort;
     }
 }
 
