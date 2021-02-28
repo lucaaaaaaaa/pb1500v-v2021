@@ -153,9 +153,9 @@ namespace _2021v_pb1150
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 408);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 704);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 42);
+            this.statusStrip1.Size = new System.Drawing.Size(1241, 42);
             this.statusStrip1.TabIndex = 10;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -173,7 +173,7 @@ namespace _2021v_pb1150
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
             this.tabControlMain.SelectedIndex = 0;
-            this.tabControlMain.Size = new System.Drawing.Size(800, 408);
+            this.tabControlMain.Size = new System.Drawing.Size(1241, 704);
             this.tabControlMain.TabIndex = 11;
             // 
             // tabPageConnection
@@ -191,7 +191,7 @@ namespace _2021v_pb1150
             this.tabPageConnection.Location = new System.Drawing.Point(4, 34);
             this.tabPageConnection.Name = "tabPageConnection";
             this.tabPageConnection.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageConnection.Size = new System.Drawing.Size(792, 370);
+            this.tabPageConnection.Size = new System.Drawing.Size(1233, 666);
             this.tabPageConnection.TabIndex = 0;
             this.tabPageConnection.Text = "Connection";
             this.tabPageConnection.UseVisualStyleBackColor = true;
@@ -201,7 +201,7 @@ namespace _2021v_pb1150
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(792, 370);
+            this.tabPage2.Size = new System.Drawing.Size(1233, 666);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -210,7 +210,7 @@ namespace _2021v_pb1150
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1241, 746);
             this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.statusStrip1);
             this.Name = "FormMain";
