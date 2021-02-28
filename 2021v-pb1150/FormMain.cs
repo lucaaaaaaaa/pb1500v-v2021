@@ -12,9 +12,9 @@ using System.IO.Ports;
 
 namespace _2021v_pb1150
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
             bitRateSelect.SelectedItem = "9600";

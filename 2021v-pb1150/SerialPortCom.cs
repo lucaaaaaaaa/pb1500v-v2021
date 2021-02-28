@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace _2021v_pb1150
 {
-    static class Program
+    static class SerialPortCom
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace _2021v_pb1150
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormMain());
         }
     }
 }

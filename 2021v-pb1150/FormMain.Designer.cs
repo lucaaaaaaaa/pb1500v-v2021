@@ -1,7 +1,7 @@
 ﻿
 namespace _2021v_pb1150
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
