@@ -153,7 +153,7 @@ namespace _2021v_pb1150
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(240, 32);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -169,7 +169,8 @@ namespace _2021v_pb1150
             this.Controls.Add(this.comPortSelect);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SoftSensConf";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
