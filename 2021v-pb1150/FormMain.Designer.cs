@@ -53,6 +53,12 @@ namespace _2021v_pb1150
             this.textBoxURV = new System.Windows.Forms.TextBox();
             this.textBoxAL = new System.Windows.Forms.TextBox();
             this.textBoxAH = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.buttonUpdateConfig = new System.Windows.Forms.Button();
+            this.buttonSaveConfig = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageConnection.SuspendLayout();
@@ -206,6 +212,12 @@ namespace _2021v_pb1150
             // 
             // tabPageConfig
             // 
+            this.tabPageConfig.Controls.Add(this.buttonSaveConfig);
+            this.tabPageConfig.Controls.Add(this.buttonUpdateConfig);
+            this.tabPageConfig.Controls.Add(this.label7);
+            this.tabPageConfig.Controls.Add(this.label6);
+            this.tabPageConfig.Controls.Add(this.label5);
+            this.tabPageConfig.Controls.Add(this.label4);
             this.tabPageConfig.Controls.Add(this.textBoxAH);
             this.tabPageConfig.Controls.Add(this.textBoxAL);
             this.tabPageConfig.Controls.Add(this.textBoxURV);
@@ -224,17 +236,17 @@ namespace _2021v_pb1150
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 77);
+            this.label3.Location = new System.Drawing.Point(8, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 25);
+            this.label3.Size = new System.Drawing.Size(102, 25);
             this.label3.TabIndex = 0;
-            this.label3.Text = "label3";
+            this.label3.Text = "Tagname";
             // 
             // buttonReadConfig
             // 
-            this.buttonReadConfig.Location = new System.Drawing.Point(291, 77);
+            this.buttonReadConfig.Location = new System.Drawing.Point(203, 188);
             this.buttonReadConfig.Name = "buttonReadConfig";
-            this.buttonReadConfig.Size = new System.Drawing.Size(75, 23);
+            this.buttonReadConfig.Size = new System.Drawing.Size(81, 43);
             this.buttonReadConfig.TabIndex = 1;
             this.buttonReadConfig.Text = "Read";
             this.buttonReadConfig.UseVisualStyleBackColor = true;
@@ -242,38 +254,94 @@ namespace _2021v_pb1150
             // 
             // textBoxTagname
             // 
-            this.textBoxTagname.Location = new System.Drawing.Point(420, 73);
+            this.textBoxTagname.Location = new System.Drawing.Point(203, 3);
             this.textBoxTagname.Name = "textBoxTagname";
-            this.textBoxTagname.Size = new System.Drawing.Size(100, 31);
+            this.textBoxTagname.Size = new System.Drawing.Size(268, 31);
             this.textBoxTagname.TabIndex = 2;
             // 
             // textBoxLRV
             // 
-            this.textBoxLRV.Location = new System.Drawing.Point(543, 71);
+            this.textBoxLRV.Location = new System.Drawing.Point(203, 40);
             this.textBoxLRV.Name = "textBoxLRV";
-            this.textBoxLRV.Size = new System.Drawing.Size(100, 31);
+            this.textBoxLRV.Size = new System.Drawing.Size(268, 31);
             this.textBoxLRV.TabIndex = 3;
             // 
             // textBoxURV
             // 
-            this.textBoxURV.Location = new System.Drawing.Point(671, 73);
+            this.textBoxURV.Location = new System.Drawing.Point(203, 77);
             this.textBoxURV.Name = "textBoxURV";
-            this.textBoxURV.Size = new System.Drawing.Size(100, 31);
+            this.textBoxURV.Size = new System.Drawing.Size(268, 31);
             this.textBoxURV.TabIndex = 4;
             // 
             // textBoxAL
             // 
-            this.textBoxAL.Location = new System.Drawing.Point(795, 69);
+            this.textBoxAL.Location = new System.Drawing.Point(203, 114);
             this.textBoxAL.Name = "textBoxAL";
-            this.textBoxAL.Size = new System.Drawing.Size(100, 31);
+            this.textBoxAL.Size = new System.Drawing.Size(268, 31);
             this.textBoxAL.TabIndex = 5;
             // 
             // textBoxAH
             // 
-            this.textBoxAH.Location = new System.Drawing.Point(911, 71);
+            this.textBoxAH.Location = new System.Drawing.Point(203, 151);
             this.textBoxAH.Name = "textBoxAH";
-            this.textBoxAH.Size = new System.Drawing.Size(100, 31);
+            this.textBoxAH.Size = new System.Drawing.Size(268, 31);
             this.textBoxAH.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 43);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(189, 25);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Lower range value";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 80);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(189, 25);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Upper range value";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 117);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(105, 25);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Alarm low";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 154);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 25);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "Alarm high";
+            // 
+            // buttonUpdateConfig
+            // 
+            this.buttonUpdateConfig.Location = new System.Drawing.Point(290, 188);
+            this.buttonUpdateConfig.Name = "buttonUpdateConfig";
+            this.buttonUpdateConfig.Size = new System.Drawing.Size(94, 43);
+            this.buttonUpdateConfig.TabIndex = 11;
+            this.buttonUpdateConfig.Text = "Update";
+            this.buttonUpdateConfig.UseVisualStyleBackColor = true;
+            this.buttonUpdateConfig.Click += new System.EventHandler(this.buttonUpdateConfig_Click);
+            // 
+            // buttonSaveConfig
+            // 
+            this.buttonSaveConfig.Location = new System.Drawing.Point(390, 188);
+            this.buttonSaveConfig.Name = "buttonSaveConfig";
+            this.buttonSaveConfig.Size = new System.Drawing.Size(81, 43);
+            this.buttonSaveConfig.TabIndex = 12;
+            this.buttonSaveConfig.Text = "Save";
+            this.buttonSaveConfig.UseVisualStyleBackColor = true;
+            this.buttonSaveConfig.Click += new System.EventHandler(this.buttonSaveConfig_Click);
             // 
             // FormMain
             // 
@@ -322,6 +390,12 @@ namespace _2021v_pb1150
         private System.Windows.Forms.TextBox textBoxAL;
         private System.Windows.Forms.TextBox textBoxURV;
         private System.Windows.Forms.TextBox textBoxLRV;
+        private System.Windows.Forms.Button buttonSaveConfig;
+        private System.Windows.Forms.Button buttonUpdateConfig;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }
 

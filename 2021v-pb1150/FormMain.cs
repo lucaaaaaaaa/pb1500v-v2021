@@ -68,5 +68,15 @@ namespace _2021v_pb1150
             textBoxAL.Text = instrumentConfigs[3];
             textBoxAH.Text = instrumentConfigs[4];
         }
+
+        private void buttonUpdateConfig_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonSaveConfig_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
