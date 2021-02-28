@@ -25,12 +25,19 @@ namespace _2021v_pb1150
             }
             if (comPortSelect.Items.Count > 0)
             {
-                comPortSelect.SelectedIndex = comPortSelect.Items.Count-1;
+                comPortSelect.SelectedIndex = comPortSelect.Items.Count - 1;
             }
         }
 
         private void connectButton_Click(object sender, EventArgs e)
         {
+            if (comPortSelect.SelectedIndex <= -1)
+                return; // FIXME error message
+            if (bitRateSelect.SelectedIndex <= -1)
+                return; // FIXME error message
+
+            serialPort.PortName = comPortSelect.Items[comPortSelect.SelectedIndex].ToString();
+            serialPort.BaudRate = Convert.ToInt32(bitRateSelect.Items[bitRateSelect.SelectedIndex]);
             //serialPort.Open();
         }
 
