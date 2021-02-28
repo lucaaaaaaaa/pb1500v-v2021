@@ -55,5 +55,18 @@ namespace _2021v_pb1150
         {
             //serialPort.WriteLine(sendDataTextBox.Text);
         }
+
+        private void buttonReadConfig_Click(object sender, EventArgs e)
+        {
+            string receivedConfig = "QT420;0.0;500.0;50;450";
+
+            string[] instrumentConfigs = receivedConfig.Split(';');
+
+            textBoxTagname.Text = instrumentConfigs[0];
+            textBoxLRV.Text = instrumentConfigs[1];
+            textBoxURV.Text = instrumentConfigs[2];
+            textBoxAL.Text = instrumentConfigs[3];
+            textBoxAH.Text = instrumentConfigs[4];
+        }
     }
 }

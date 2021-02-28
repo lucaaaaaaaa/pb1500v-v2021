@@ -44,11 +44,19 @@ namespace _2021v_pb1150
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tabControlMain = new System.Windows.Forms.TabControl();
             this.tabPageConnection = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPageConfig = new System.Windows.Forms.TabPage();
             this.serialPort = new System.IO.Ports.SerialPort(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonReadConfig = new System.Windows.Forms.Button();
+            this.textBoxTagname = new System.Windows.Forms.TextBox();
+            this.textBoxLRV = new System.Windows.Forms.TextBox();
+            this.textBoxURV = new System.Windows.Forms.TextBox();
+            this.textBoxAL = new System.Windows.Forms.TextBox();
+            this.textBoxAH = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageConnection.SuspendLayout();
+            this.tabPageConfig.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -168,7 +176,7 @@ namespace _2021v_pb1150
             // tabControlMain
             // 
             this.tabControlMain.Controls.Add(this.tabPageConnection);
-            this.tabControlMain.Controls.Add(this.tabPage2);
+            this.tabControlMain.Controls.Add(this.tabPageConfig);
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
@@ -196,15 +204,76 @@ namespace _2021v_pb1150
             this.tabPageConnection.Text = "Connection";
             this.tabPageConnection.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tabPageConfig
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1233, 666);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPageConfig.Controls.Add(this.textBoxAH);
+            this.tabPageConfig.Controls.Add(this.textBoxAL);
+            this.tabPageConfig.Controls.Add(this.textBoxURV);
+            this.tabPageConfig.Controls.Add(this.textBoxLRV);
+            this.tabPageConfig.Controls.Add(this.textBoxTagname);
+            this.tabPageConfig.Controls.Add(this.buttonReadConfig);
+            this.tabPageConfig.Controls.Add(this.label3);
+            this.tabPageConfig.Location = new System.Drawing.Point(4, 34);
+            this.tabPageConfig.Name = "tabPageConfig";
+            this.tabPageConfig.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageConfig.Size = new System.Drawing.Size(1233, 666);
+            this.tabPageConfig.TabIndex = 1;
+            this.tabPageConfig.Text = "Config";
+            this.tabPageConfig.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(136, 77);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 25);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "label3";
+            // 
+            // buttonReadConfig
+            // 
+            this.buttonReadConfig.Location = new System.Drawing.Point(291, 77);
+            this.buttonReadConfig.Name = "buttonReadConfig";
+            this.buttonReadConfig.Size = new System.Drawing.Size(75, 23);
+            this.buttonReadConfig.TabIndex = 1;
+            this.buttonReadConfig.Text = "Read";
+            this.buttonReadConfig.UseVisualStyleBackColor = true;
+            this.buttonReadConfig.Click += new System.EventHandler(this.buttonReadConfig_Click);
+            // 
+            // textBoxTagname
+            // 
+            this.textBoxTagname.Location = new System.Drawing.Point(420, 73);
+            this.textBoxTagname.Name = "textBoxTagname";
+            this.textBoxTagname.Size = new System.Drawing.Size(100, 31);
+            this.textBoxTagname.TabIndex = 2;
+            // 
+            // textBoxLRV
+            // 
+            this.textBoxLRV.Location = new System.Drawing.Point(543, 71);
+            this.textBoxLRV.Name = "textBoxLRV";
+            this.textBoxLRV.Size = new System.Drawing.Size(100, 31);
+            this.textBoxLRV.TabIndex = 3;
+            // 
+            // textBoxURV
+            // 
+            this.textBoxURV.Location = new System.Drawing.Point(671, 73);
+            this.textBoxURV.Name = "textBoxURV";
+            this.textBoxURV.Size = new System.Drawing.Size(100, 31);
+            this.textBoxURV.TabIndex = 4;
+            // 
+            // textBoxAL
+            // 
+            this.textBoxAL.Location = new System.Drawing.Point(795, 69);
+            this.textBoxAL.Name = "textBoxAL";
+            this.textBoxAL.Size = new System.Drawing.Size(100, 31);
+            this.textBoxAL.TabIndex = 5;
+            // 
+            // textBoxAH
+            // 
+            this.textBoxAH.Location = new System.Drawing.Point(911, 71);
+            this.textBoxAH.Name = "textBoxAH";
+            this.textBoxAH.Size = new System.Drawing.Size(100, 31);
+            this.textBoxAH.TabIndex = 6;
             // 
             // FormMain
             // 
@@ -221,6 +290,8 @@ namespace _2021v_pb1150
             this.tabControlMain.ResumeLayout(false);
             this.tabPageConnection.ResumeLayout(false);
             this.tabPageConnection.PerformLayout();
+            this.tabPageConfig.ResumeLayout(false);
+            this.tabPageConfig.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,8 +313,15 @@ namespace _2021v_pb1150
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabPageConnection;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPageConfig;
         private System.IO.Ports.SerialPort serialPort;
+        private System.Windows.Forms.TextBox textBoxTagname;
+        private System.Windows.Forms.Button buttonReadConfig;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxAH;
+        private System.Windows.Forms.TextBox textBoxAL;
+        private System.Windows.Forms.TextBox textBoxURV;
+        private System.Windows.Forms.TextBox textBoxLRV;
     }
 }
 
